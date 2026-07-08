@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Atm.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DepositServlet</servlet-name>
+        <servlet-class>Atm.DepositServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DepositServlet</servlet-name>
+        <url-pattern>/DepositServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WithdrawServlet</servlet-name>
+        <servlet-class>Atm.WithdrawServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WithdrawServlet</servlet-name>
+        <url-pattern>/WithdrawServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>BalanceServlet</servlet-name>
+    <servlet-class>Atm.BalanceServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>BalanceServlet</servlet-name>
+    <url-pattern>/BalanceServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>MiniStatementServlet</servlet-name>
+    <servlet-class>Atm.MiniStatementServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>MiniStatementServlet</servlet-name>
+    <url-pattern>/MiniStatementServlet</url-pattern>
+   </servlet-mapping>
+   <servlet>
+    <servlet-name>ChangePinServlet</servlet-name>
+    <servlet-class>Atm.ChangePinServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ChangePinServlet</servlet-name>
+    <url-pattern>/ChangePinServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>Atm.LogoutServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>
+
+</web-app>
